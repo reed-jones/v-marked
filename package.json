@@ -1,6 +1,6 @@
 {
-  "name": "v-marked",
-  "version": "0.1.0",
+  "name": "@j0nz/v-marked",
+  "version": "0.1.1",
   "private": false,
   "license": "ISC",
   "main": "./dist/v-marked.umd.min.js",

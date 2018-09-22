@@ -3,19 +3,21 @@
     <button @click='reColor'>click</button>
 <v-marked ref='myMarked'>
 # Marked in the browser
-Rendered by **marked**.
-## thats neat
-1. test
-1. test 2
+## Rendered by **marked**.
 
-| test | test | test 3 |
-|--|--|--|
-| 1 | 2 | 3 |
-| 4 | 5 | 6 |
+## thats neat
+1. list 1
+1. list 2
+1. list 3
+
+| header 1 | header 2 | header 3 |
+|----------|----------|----------|
+| 1        | 2        | 3        |
+| 4        | 5        | 6        |
 
 ```javascript
 if (true) {
-  let publish = "cool"
+  console.log("Written with @j0nz/v-marked")
 }
 ```
 </v-marked>

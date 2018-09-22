@@ -7,13 +7,13 @@ yarn install v-marked
 
 ### Setup
 ```js
-import VMarked from './components'
+import VMarked from '@j0nz/v-marked'
 Vue.use(VMarked)
 ```
 
 ### Advanced Setup With Syntax Highlighting from [Prismjs](https://prismjs.com/)
 ```js
-import VMarked from './components'
+import VMarked from '@j0nz/v-marked'
 
 Vue.use(VMarked, {
   syntaxHighlight: true,
@@ -32,7 +32,7 @@ If you prefer to link to your prism css sheet in `<head />`, don't supply `prism
 
 Anywhere in your components, supply the `<v-marked />` tag and fill it with all your markdown.
 ``````
-<v-marked ref='myMarked'>
+<v-marked>
 # Marked in the browser
 ## Rendered by **marked**.
 
