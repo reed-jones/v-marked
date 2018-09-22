@@ -23,3 +23,8 @@ const MyPlugin = {
 };
 
 export default MyPlugin;
+
+// Automatic installation if Vue has been added to the global scope.
+if (typeof window !== 'undefined' && window.Vue) {
+  window.Vue.use(MyPlugin)
+}
