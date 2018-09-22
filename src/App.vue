@@ -1,17 +1,34 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <button @click='reColor'>click</button>
+<v-marked ref='myMarked'>
+# Marked in the browser
+Rendered by **marked**.
+## thats neat
+1. test
+1. test 2
+
+| test | test | test 3 |
+|--|--|--|
+| 1 | 2 | 3 |
+| 4 | 5 | 6 |
+
+```javascript
+if (true) {
+  let publish = "cool"
+}
+```
+</v-marked>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'app',
-  components: {
-    HelloWorld
+  methods: {
+    reColor() {
+      this.$refs.myMarked.highlight()
+    }
   }
 }
 </script>
@@ -20,7 +37,6 @@ export default {
   font-family 'Avenir', Helvetica, Arial, sans-serif
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
-  text-align center
   color #2c3e50
   margin-top 60px
 </style>

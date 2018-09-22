@@ -1,19 +1,49 @@
 {
-  "name": "vue-strapdown",
+  "name": "v-marked",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "license": "ISC",
+  "main": "./dist/v-marked.umd.min.js",
+  "author": "Reed Jones <reedjones@reedjones.com>",
+  "description": "Easy to use markdown component, with syntax highlighting",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "marked",
+    "markdown",
+    "prism",
+    "prismjs",
+    "syntax",
+    "highlighting"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "bundle": "vue-cli-service build --target lib --name v-marked ./src/components/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reed-jones/v-marked.git"
   },
   "dependencies": {
+    "marked": "^0.5.0",
+    "prismjs": "^1.15.0",
     "vue": "^2.5.17"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.3",
     "@vue/cli-service": "^3.0.3",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "vue-template-compiler": "^2.5.17"
-  }
+  },
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ]
 }
